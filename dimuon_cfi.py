@@ -38,7 +38,7 @@ bfilter = cms.EDFilter("PythiaFilter",  # in order to select the b quark.
 )
                          
 muFilter = cms.EDFilter("MCSmartSingleParticleFilter", # in order to select the muon 
-                           MinPt = cms.untracked.vdouble(2.5,2.5),
+                           MinPt = cms.untracked.vdouble(3.5,3.5),
                            MinEta = cms.untracked.vdouble(-2.5,-2.5),
                            MaxEta = cms.untracked.vdouble( 2.5, 2.5),
                            ParticleID = cms.untracked.vint32(13,-13),
