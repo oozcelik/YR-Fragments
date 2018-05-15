@@ -60,10 +60,10 @@ TwoMuonFilter = cms.EDFilter("MCParticlePairFilter",  # in order to put acccepta
     Status = cms.untracked.vint32(1,1),
     MinPt = cms.untracked.vdouble(3.5, 3.5),
     MaxPt = cms.untracked.vdouble(9999.0,9999.0),
-    MaxEta = cms.untracked.vdouble( 2.5,2.5),
+    MaxEta = cms.untracked.vdouble(2.5,2.5),
     MinEta = cms.untracked.vdouble(-2.5,-2.5),
-    ParticleID1 = cms.untracked.vint32(13),
-    ParticleID2 = cms.untracked.vint32(-13),
+    ParticleID1 = cms.untracked.vint32(13,-13),
+    ParticleID2 = cms.untracked.vint32(13,-13),
     MinInvMass = cms.untracked.double(4.5),
     MaxInvMass = cms.untracked.double(6.5),
 )
