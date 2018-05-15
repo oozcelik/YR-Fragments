@@ -14,7 +14,8 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
             list_forced_decays = cms.vstring(),
             operates_on_particles = cms.vint32(),
             convertPythiaCodes = cms.untracked.bool(False),
-            user_decay_file = cms.vstring(''),
+            user_decay_file = cms.vstring('')
+        ),
             parameterSets = cms.vstring('EvtGen130')
         ),        
         PythiaParameters = cms.PSet(pythia8CommonSettingsBlock,
